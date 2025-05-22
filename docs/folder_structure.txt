@@ -1,0 +1,70 @@
+プロジェクト名: inventory-system
+===================================
+このプロジェクトのフォルダー構成を以下に示します。
+
+[ルートディレクトリ]
+inventory-system/
+├── backend/      # バックエンド（API & DB管理）
+├── frontend/     # フロントエンド（UI & ユーザーインターフェース）
+├── docs/         # プロジェクト全体のドキュメント
+├── .gitignore    # Git管理対象外ファイル
+├── README.md     # プロジェクト概要説明
+├── docker-compose.yml  # Docker設定ファイル
+
+-----------------------------------
+[バックエンド: backend/]
+backend/
+├── src/
+│   ├── controllers/    # APIのビジネスロジック（商品・発注）
+│   ├── models/         # データベース操作（SQLクエリ）
+│   ├── routes/         # APIルート定義
+│   ├── database/       # DB関連（SQLスクリプト管理）
+│   ├── config/         # 設定ファイル（環境変数, Swagger）
+│   ├── utils/          # ユーティリティ関数（ログ管理など）
+│   ├── server.ts       # メインのExpressサーバー
+├── package.json        # npm 設定
+├── tsconfig.json       # TypeScript 設定
+├── .gitignore          # Git管理対象外ファイル
+├── README.md           # バックエンドの概要説明
+
+-----------------------------------
+[フロントエンド: frontend/]
+frontend/
+├── public/           # 公開ファイル（favicon, index.html）
+├── src/
+│   ├── components/   # UIコンポーネント
+│   ├── pages/        # 各ページ（商品一覧・発注画面）
+│   ├── services/     # API通信処理
+│   ├── utils/        # ヘルパー関数
+│   ├── App.tsx       # ルートコンポーネント
+│   ├── main.tsx      # エントリーポイント
+├── package.json      # npm 設定
+├── tsconfig.json     # TypeScript 設定
+├── .gitignore        # Git管理対象外ファイル
+├── README.md         # フロントエンドの概要説明
+
+-----------------------------------
+[ドキュメント: docs/]
+docs/
+├── api/                 # API仕様書（バックエンド向け）
+│   ├── productAPI.txt   # 商品API仕様
+│   ├── orderAPI.txt     # 発注API仕様
+│
+├── db/                  # データベース関連ドキュメント
+│   ├── schema.txt       # 現在のスキーマ定義
+│   ├── procedures.txt   # ストアドプロシージャ一覧
+│   ├── migration_guide.txt  # テーブル変更手順
+│
+├── ui/                  # フロントエンドのUI仕様
+│   ├── component_guide.txt  # UIコンポーネント仕様
+│   ├── api_integration.txt  # API連携ガイド
+│
+├── setup/               # システムのセットアップ情報
+│   ├── installation.txt   # 環境構築手順
+│   ├── troubleshooting.txt # FAQ・トラブルシューティング
+│
+├── architecture.txt      # システム設計概要
+├── folder_structure.txt  # ✅ フォルダー構成（このドキュメント）
+├── README.txt            # ドキュメント全体の説明
+
+===================================
